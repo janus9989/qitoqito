@@ -21,36 +21,36 @@
 
 # 初始化
 
-	为避免第三方滥用,请自行添加环境变量 QITOQITO
-	QITOQITO_PLATFORM=按照所使用面板正确填写 qinglong|jtask|jd 其中一个 [青龙面板:qinglong, v3系列:jtask, 衍生面板:jd],
-	QITOQITO_SYNC=1 当有此变量时,面板定时会与项目定时同步,如需自行修改,请勿添加该字段
-	QITOQITO_COVER=1 当有此变量时候,qitoCreat会强制覆盖之前生成的入口文件
+	为避免第三方补肾，请自行添加环境指标QITOQITO
+	QITOQITO_PLATFORM=按照所用面板正确填写 qinglong|jtask|jd 其中一个 [青龙面板:qinglong, v3系列:jtask, 衍生面板:jd],
+	QITOQITO_SYNC=1 当有此变量时，面板定时会与定时项目同步，如需自行修改，请勿添加该字段
+	QITOQITO_COVER=1 当有此变量时，qitoCreat会强制覆盖生成之前的入口文件
 
-# 环境变量
-	# COOKIE
+#环境指标
+	＃ 曲奇饼
 	JD_COOKIE=ck1&ck2&ck3
-	JD_COOKIE_MAIN=n 全局主号助力人数,假设你有20个账号,当参数设置为5时候,这20个账号会去助力排前面的5个账号
+	JD_COOKIE_MAIN=n 全局主号帮助XX，假设你有20个账号，当参数设置为5的时候，这20个账号会去帮助排前面的5个账号
     msgWhite=fn1|fn2|fn3  通知白名单
     msgBlack=fn1|fn2|fn3  通知黑名单
 
 
-# 脚本字段
-    脚本字段是自行定义某一个脚本运行的一些变量,如果有需求可自行添加环境变量
+#字段脚本
+    脚本字段是自己定义某一个脚本运行的一些变量，如果有需求可自行添加环境变量
     
-    filename_help=n 或 pin1|pin2 (设置助力主号数)
+    filename_help=n 或 pin1|pin2 (设置辅助主号数)
     filename_custom=custom (自定义字段)
 	filename_limit=n (限制运行账号数)
 	filename_msgWork=pin1|pin2|pin3 (通知账号白名单)
     filename_msgExcept=pin1|pin2|pin3 (通知账号黑名单)
 
-# 食用方法
-    # qinglong面板
-    rm -rf /ql/data/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/data/repo/qitoqito_kedaya/. /ql/data/scripts && task qitoCreat.js now
+#食用方法
+    #青龙面板
+    rm -rf /ql/data/repo/qitoqito_kedaya && ql 存储库 https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/data/repo/qitoqito_kedaya/。现在 /ql/data/scripts && 任务 qitoCreat.js
     # 青龙面板(旧)
-	rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/. /ql/scripts && task qitoCreat.js now
+	rm -rf /ql/repo/qitoqito_kedaya && ql 存储库 https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/。/ql/scripts && 现在任务 qitoCreat.js
    
     # v3系列
-    rm -rf kedaya && git clone  https://github.com/qitoqito/kedaya.git  && cp -a kedaya/. ./scripts && jtask qitoCreat now
+    rm -rf kedaya && git clone https://github.com/qitoqito/kedaya.git && cp -a kedaya/。./scripts && jtask qito立即创建
     
      # 衍生面板
     rm -rf kedaya && git clone  https://github.com/qitoqito/kedaya.git  && cp -a kedaya/. ./scripts && jd qitoCreat now
@@ -106,5 +106,15 @@
 
 # 单独通知
 	框架支持给不同用户推送通知
+ #青龙拉库 2.15.16
+ 执行前 rm -rf /ql/data/repo/qitoqito_kedaya
+ 执行后cp -a /ql/data/repo/qitoqito_kedaya/. /ql/data/scripts && task qitoCreat.js now
+ [env]
+#QITOQITO
+QITOQITO_PLATFORM=qinglong
+QITOQITO_DISABLE=1
+QITOQITO_COVER=1
+QITOQITO=token
+ 
 
     
